@@ -2,9 +2,9 @@
 import { useRef, useState } from "react";
 
 export default function Home() {
-  const zipCodeRef = useRef();
-  const addressRef = useRef();
-  const addressRef2 = useRef();
+  const zipCodeRef = useRef<any>();
+  const addressRef = useRef<any>();
+  const addressRef2 = useRef<any>();
   const handleZipCode = async () => {
     const { current: { value } } = zipCodeRef;
     if (!value.includes("-")) {
